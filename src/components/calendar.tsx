@@ -49,10 +49,11 @@ const Calendar = () => {
             onClick={(e) => {
               e.stopPropagation();
             }}
-            className="bg-zinc-700 h-40 w-48 flex flex-col"
+            className="bg-zinc-700 items-center justify-center h-40 w-48 flex flex-col"
           >
             {eventData?.title}
             <button
+            className="bg-zinc-950 rounded-xl px-3 py-1"
               onClick={(e) => {
                 if (eventData) {
                   triggerHms(hmsActions, eventData);
